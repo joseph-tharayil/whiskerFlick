@@ -1,0 +1,46 @@
+{
+     "dims": [
+          "seed"
+     ],
+     "attrs": {
+          "path_prefix": "/gpfs/bbp.cscs.ch/data/scratch/proj85/from68/sonata_circuits/whiskerFlick/compartment/",
+          "blue_config_template": "SONATAConfig__SSCx-HexO1-Release-TC__OUCalib__VPM.tmpl",
+          "circuit_target": "hex_O1",
+          "sim_duration": 1,
+          "reconn_delay": 1000,
+          "ornstein_uhlenbeck_delay": 0,
+          "ca": 1.05,
+          "depol_stdev_mean_ratio": 0.4,
+          "desired_connected_proportion_of_invivo_frs": 0.3,
+          "in_vivo_reference_frs": {
+               "L1I": 1.5,
+               "L23E": 0.07,
+               "L23I": 0.961,
+               "L4E": 0.619,
+               "L4I": 1.184,
+               "L5E": 1.252,
+               "L5I": 2.357,
+               "L6E": 0.47,
+               "L6I": 1.5
+          },
+          "data_for_unconnected_fit_name": "data_for_unconnected_fit_conductance_based_TRIANGLULAR-19-7-22.parquet",
+          "data_for_connected_adjustment_fit_name": "concatented_mgfix_connection_data_15-11-22.parquet",
+          "unconnected_connected_fr_adjustment_fit_method": "exponential",
+          "circuit_config": "/gpfs/bbp.cscs.ch/project/proj83/circuits/Bio_M/20200805-pure-sonata/circuit_config.json"
+     },
+     "data": [
+          "c6374a94-59b9-468d-8958-f7c8f876e562/0"
+     ],
+     "coords": {
+          "seed": {
+               "dims": [
+                    "seed"
+               ],
+               "attrs": {},
+               "data": [
+                    851
+               ]
+          }
+     },
+     "name": "c6374a94-59b9-468d-8958-f7c8f876e562"
+}
