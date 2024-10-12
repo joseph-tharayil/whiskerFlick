@@ -1,0 +1,180 @@
+{
+     "dims": [
+          "ca",
+          "depol_stdev_mean_ratio",
+          "desired_connected_proportion_of_invivo_frs",
+          "vpm_pct",
+          "seed"
+     ],
+     "attrs": {
+          "path_prefix": "/gpfs/bbp.cscs.ch/data/scratch/proj85/from68/sonata_circuits/whiskerFlick/original/parameterSweep",
+          "blue_config_template": "SONATAConfig__SSCx-HexO1-Release-TC__OUCalib__VPM_EEG.tmpl",
+          "circuit_target": "hex_O1",
+          "sim_duration": 2200,
+          "reconn_delay": 1000,
+          "ornstein_uhlenbeck_delay": 250,
+          "in_vivo_reference_frs": {
+               "L1I": 1.5,
+               "L23E": 0.07,
+               "L23I": 0.961,
+               "L4E": 0.619,
+               "L4I": 1.184,
+               "L5E": 1.252,
+               "L5I": 2.357,
+               "L6E": 0.47,
+               "L6I": 1.5
+          },
+          "data_for_unconnected_fit_name": "data_for_unconnected_fit_conductance_based_TRIANGLULAR-19-7-22.parquet",
+          "data_for_connected_adjustment_fit_name": "concatented_mgfix_connection_data_15-11-22.parquet",
+          "unconnected_connected_fr_adjustment_fit_method": "exponential",
+          "stim_seed": 12345,
+          "stim_target": "hex0",
+          "vpm_proj_name": "VPM",
+          "stim_delay": 1500,
+          "stim_rate": 2,
+          "vpm_mu": 1.65,
+          "pom_mu": 2.98,
+          "vpm_sigma": 0.22,
+          "pom_sigma": 0.32,
+          "vpm_spike_rate": 1.0,
+          "pom_spike_rate": 0.5,
+          "circuit_config": "/gpfs/bbp.cscs.ch/project/proj83/circuits/Bio_M/20200805-pure-sonata/circuit_config.json"
+     },
+     "data": [
+          [
+               [
+                    [
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/0"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/1"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/2"
+                         ]
+                    ]
+               ],
+               [
+                    [
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/3"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/4"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/5"
+                         ]
+                    ]
+               ],
+               [
+                    [
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/6"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/7"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/8"
+                         ]
+                    ]
+               ]
+          ],
+          [
+               [
+                    [
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/9"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/10"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/11"
+                         ]
+                    ]
+               ],
+               [
+                    [
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/12"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/13"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/14"
+                         ]
+                    ]
+               ],
+               [
+                    [
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/15"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/16"
+                         ],
+                         [
+                              "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd/17"
+                         ]
+                    ]
+               ]
+          ]
+     ],
+     "coords": {
+          "ca": {
+               "dims": [
+                    "ca"
+               ],
+               "attrs": {},
+               "data": [
+                    1.05,
+                    1.1
+               ]
+          },
+          "depol_stdev_mean_ratio": {
+               "dims": [
+                    "depol_stdev_mean_ratio"
+               ],
+               "attrs": {},
+               "data": [
+                    0.2,
+                    0.3,
+                    0.4
+               ]
+          },
+          "desired_connected_proportion_of_invivo_frs": {
+               "dims": [
+                    "desired_connected_proportion_of_invivo_frs"
+               ],
+               "attrs": {},
+               "data": [
+                    0.3
+               ]
+          },
+          "vpm_pct": {
+               "dims": [
+                    "vpm_pct"
+               ],
+               "attrs": {},
+               "data": [
+                    5,
+                    10,
+                    15
+               ]
+          },
+          "seed": {
+               "dims": [
+                    "seed"
+               ],
+               "attrs": {},
+               "data": [
+                    851
+               ]
+          }
+     },
+     "name": "fe3ea7a9-94d9-45bc-9ea2-351296e0fbfd"
+}

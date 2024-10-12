@@ -16,4 +16,5 @@
 spack env activate bluerecording-dev
 source ~/b/bin/activate
 
-srun -n 1 python run_initialize_h5.py 'electrode_csv_MoreHighRes.csv' 'simulation_config.json' 'coeffs_neuropixels_MoreHighRes.h5' 
+srun -n 1 python run_initialize_h5.py 'electrode_csv_StupidHighRes.csv' 'simulation_config.json' 'coeffs_neuropixels_StupidHighRes.h5' 
+

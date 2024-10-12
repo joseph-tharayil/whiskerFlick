@@ -19,4 +19,4 @@ source ~/bluerecording-dev/bin/activate
 NEURONS_PER_FILE=1000
 FILES_PER_FOLDER=50
 
-srun -n 6000 python run_write_weights.py 'simulation_config.json' 'positions' 'coeffs_eeg.h5' $NEURONS_PER_FILE $FILES_PER_FOLDER 'electrode_eeg.csv' '/gpfs/bbp.cscs.ch/project/proj85/scratch/EEG.h5'
+srun -n 6000 python run_write_weights.py 'simulation_config.json' 'positions' 'coeffs_eeg_lambda.h5' $NEURONS_PER_FILE $FILES_PER_FOLDER 'electrode_eeg.csv' '/gpfs/bbp.cscs.ch/project/proj85/scratch/EEG_Lambda.h5'
