@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name="EEG_2_CoordsV"
 #SBATCH --partition=prod
-#SBATCH --nodes=2
+#SBATCH --nodes=20
 #SBATCH -C clx
 #SBATCH --cpus-per-task=2
 #SBATCH --time=2:00:00
@@ -25,5 +25,5 @@ do
     mkdir $i/pkls
 done
 
-srun -n 60 python geteeg.py
+srun -n 600 python geteeg.py
 

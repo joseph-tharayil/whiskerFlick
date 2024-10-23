@@ -4,7 +4,7 @@ import h5py
 import sys
 from mpi4py import MPI
 
-def editSpikeFile(path_to_sims,target_type,newPath,remove=False):
+def editSpikeFile(path_to_sims,target_type,newPath,remove=True):
 
     iteration = MPI.COMM_WORLD.Get_rank()
     path_to_sim = path_to_sims+'/'+str(iteration)
@@ -43,6 +43,6 @@ if __name__=='__main__':
     if len(sys.argv)>4:
         remove = sys.argv[4]
     else:
-        remove = False
+        remove = True
 
     editSpikeFile(path_to_sims,target_type,newPath,remove)

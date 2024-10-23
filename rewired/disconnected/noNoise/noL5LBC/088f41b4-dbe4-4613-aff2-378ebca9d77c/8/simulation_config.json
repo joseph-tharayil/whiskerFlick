@@ -62,7 +62,7 @@
         "input_type": "spikes",
         "delay": 0,
         "duration": 2200,
-        "spike_file": "/gpfs/bbp.cscs.ch/project/proj85/scratch/from68/sonata_circuits/whiskerFlick/NoL5LBC_rewired/NoL5LBC_rewired_0.h5",
+        "spike_file": "/gpfs/bbp.cscs.ch/project/proj85/scratch/from68/sonata_circuits/whiskerFlick/NoL5LBC_rewired/NoL5LBC_rewired_8.h5",
         "source": "hex_O1",
         "node_set": "hex_O1"
     },

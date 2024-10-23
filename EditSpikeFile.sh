@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name="EEG_2_CoordsV"
 #SBATCH --partition=prod
-#SBATCH --nodes=6
+#SBATCH --nodes=60
 #SBATCH -C clx
 #SBATCH --cpus-per-task=2
 #SBATCH --time=24:00:00
@@ -61,19 +61,19 @@ mkdir NoL5NBC_rewired
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5Inhibitory' 'NoL5Inh/NoL5Inh' 'True' &
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer6Inhibitory' 'NoL6Inh/NoL6Inh' 'True' &
 
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer23Excitatory' 'NoL23Exc_rewired/NoL23Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer4Excitatory' 'NoL4Exc_rewired/NoL4Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer5Excitatory' 'NoL5Exc_rewired/NoL5Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer6Excitatory' 'NoL6Exc_rewired/NoL6Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer1Inhibitory' 'NoL1Inh_rewired/NoL1Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer23Inhibitory' 'NoL23Inh_rewired/NoL23Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer4Inhibitory' 'NoL4Inh_rewired/NoL4Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer5Inhibitory' 'NoL5Inh_rewired/NoL5Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'Layer6Inhibitory' 'NoL6Inh_rewired/NoL6Inh_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Excitatory' 'NoL23Exc_rewired/NoL23Exc_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Excitatory' 'NoL4Exc_rewired/NoL4Exc_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Excitatory' 'NoL5Exc_rewired/NoL5Exc_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Excitatory' 'NoL6Exc_rewired/NoL6Exc_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer1Inhibitory' 'NoL1Inh_rewired/NoL1Inh_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Inhibitory' 'NoL23Inh_rewired/NoL23Inh_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Inhibitory' 'NoL4Inh_rewired/NoL4Inh_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Inhibitory' 'NoL5Inh_rewired/NoL5Inh_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Inhibitory' 'NoL6Inh_rewired/NoL6Inh_rewired' 'True' &
 
-srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'L5_MC' 'NoL5MC_rewired/NoL5MC_rewired' 'True' &
-srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'L5_LBC' 'NoL5LBC_rewired/NoL5LBC_rewired' 'True' &
-srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'L5_NBC' 'NoL5NBC_rewired/NoL5NBC_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'L5_MC' 'NoL5MC_rewired/NoL5MC_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_LBC' 'NoL5LBC_rewired/NoL5LBC_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_NBC' 'NoL5NBC_rewired/NoL5NBC_rewired' 'True' &
 
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_MC' 'NoL5MC/NoL5MC' 'True' &
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_LBC' 'NoL5LBC/NoL5LBC' 'True' &

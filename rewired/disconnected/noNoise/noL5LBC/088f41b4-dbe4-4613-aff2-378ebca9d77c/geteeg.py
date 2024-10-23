@@ -10,7 +10,7 @@ rank = MPI.COMM_WORLD.Get_rank()
 
 nranks = MPI.COMM_WORLD.Get_size()
 
-numfolders = 1
+numfolders = 10
 
 folder = str(rank % numfolders)
 
