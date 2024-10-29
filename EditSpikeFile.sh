@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name="EEG_2_CoordsV"
 #SBATCH --partition=prod
-#SBATCH --nodes=60
+#SBATCH --nodes=1
 #SBATCH -C clx
 #SBATCH --cpus-per-task=2
 #SBATCH --time=24:00:00
@@ -43,9 +43,9 @@ source ~/bluerecording-dev/bin/activate
 #mkdir NoL5LBC
 #mkdir NoL5NBC
 
-mkdir NoL5MC_rewired
-mkdir NoL5LBC_rewired
-mkdir NoL5NBC_rewired
+mkdir NoL5PV_rewired
+mkdir NoL5PV
+
 
 #mkdir NoL1Inh
 #mkdir NoL1Inh_rewired
@@ -61,7 +61,7 @@ mkdir NoL5NBC_rewired
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5Inhibitory' 'NoL5Inh/NoL5Inh' 'True' &
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer6Inhibitory' 'NoL6Inh/NoL6Inh' 'True' &
 
-srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Excitatory' 'NoL23Exc_rewired/NoL23Exc_rewired' 'True' &
+#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Excitatory' 'NoL23Exc_rewired/NoL23Exc_rewired' 'True' &
 #srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Excitatory' 'NoL4Exc_rewired/NoL4Exc_rewired' 'True' &
 #srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Excitatory' 'NoL5Exc_rewired/NoL5Exc_rewired' 'True' &
 #srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Excitatory' 'NoL6Exc_rewired/NoL6Exc_rewired' 'True' &
@@ -77,6 +77,7 @@ srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0
 
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_MC' 'NoL5MC/NoL5MC' 'True' &
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_LBC' 'NoL5LBC/NoL5LBC' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_NBC' 'NoL5NBC/NoL5NBC' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5_PV' 'NoL5PV/NoL5PV' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5_PV' 'NoL5PV_rewired/NoL5PV_rewired' 'True' &
 
 wait
