@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name="EEG_2_CoordsV"
 #SBATCH --partition=prod
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH -C clx
 #SBATCH --cpus-per-task=2
 #SBATCH --time=24:00:00
@@ -43,8 +43,11 @@ source ~/bluerecording-dev/bin/activate
 #mkdir NoL5LBC
 #mkdir NoL5NBC
 
-mkdir NoL5PV_rewired
-mkdir NoL5PV
+mkdir NoL5DBC_rewired
+mkdir NoL5DBC
+
+mkdir NoL5BP
+mkdir NoL5BP_rewired
 
 
 #mkdir NoL1Inh
@@ -75,9 +78,10 @@ mkdir NoL5PV
 #srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_LBC' 'NoL5LBC_rewired/NoL5LBC_rewired' 'True' &
 #srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_NBC' 'NoL5NBC_rewired/NoL5NBC_rewired' 'True' &
 
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_MC' 'NoL5MC/NoL5MC' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_DBC' 'NoL5DBC/NoL5DBC' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_BP' 'NoL5BP/NoL5BP' 'True' &
 #srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_LBC' 'NoL5LBC/NoL5LBC' 'True' &
-srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5_PV' 'NoL5PV/NoL5PV' 'True' &
-srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5_PV' 'NoL5PV_rewired/NoL5PV_rewired' 'True' &
-
+#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_BTC' 'NoL5BTC/NoL5BTC' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_BP' 'NoL5BP_rewired/NoL5BP_rewired' 'True' &
+run -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_DBC' 'NoL5DBC_rewired/NoL5DBC_rewired' 'True' &
 wait
