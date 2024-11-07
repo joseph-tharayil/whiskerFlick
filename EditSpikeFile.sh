@@ -16,32 +16,30 @@
 spack env activate bluerecording-dev
 source ~/bluerecording-dev/bin/activate
 
-#srun python editSpikeFile.py 'rewired/f090d92c-29b1-4033-96d2-e1a67b33dab6/0' 'L5_BTC' 'NoL5BTC_rewired.h5' 'True' &
-#srun python editSpikeFile.py 'rewired/f090d92c-29b1-4033-96d2-e1a67b33dab6/0' 'L5_SBC' 'NoL5SBC_rewired.h5' 'True' &
 
-#mkdir NoL23Exc_rewired
-#mkdir NoL4Exc_rewired
-#mkdir NoL5Exc_rewired
-#mkdir NoL6Exc_rewired
-#mkdir NoL1Inh_rewired
-#mkdir NoL23Inh_rewired
-#mkdir NoL4Inh_rewired
-#mkdir NoL5Inh_rewired
-#mkdir NoL6Inh_rewired
+mkdir NoL23Exc_rewired
+mkdir NoL4Exc_rewired
+mkdir NoL5Exc_rewired
+mkdir NoL6Exc_rewired
+mkdir NoL1Inh_rewired
+mkdir NoL23Inh_rewired
+mkdir NoL4Inh_rewired
+mkdir NoL5Inh_rewired
+mkdir NoL6Inh_rewired
 
-#mkdir NoL23Exc
-#mkdir NoL4Exc
-#mkdir NoL5Exc
-#mkdir NoL6Exc
-#mkdir NoL1Inh
-#mkdir NoL23Inh
-#mkdir NoL4Inh
-#mkdir NoL5Inh
-#mkdir NoL6Inh
+mkdir NoL23Exc
+mkdir NoL4Exc
+mkdir NoL5Exc
+mkdir NoL6Exc
+mkdir NoL1Inh
+mkdir NoL23Inh
+mkdir NoL4Inh
+mkdir NoL5Inh
+mkdir NoL6Inh
 
-#mkdir NoL5MC
-#mkdir NoL5LBC
-#mkdir NoL5NBC
+mkdir NoL5MC
+mkdir NoL5LBC
+mkdir NoL5NBC
 
 mkdir NoL5DBC_rewired
 mkdir NoL5DBC
@@ -49,39 +47,30 @@ mkdir NoL5DBC
 mkdir NoL5BP
 mkdir NoL5BP_rewired
 
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer23Excitatory' 'NoL23Exc/NoL23Exc' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer4Excitatory' 'NoL4Exc/NoL4Exc' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5Excitatory' 'NoL5Exc/NoL5Exc' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer6Excitatory' 'NoL6Exc/NoL6Exc' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer1Inhibitory' 'NoL1Inh/NoL1Inh' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer23Inhibitory' 'NoL23Inh/NoL23Inh' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer4Inhibitory' 'NoL4Inh/NoL4Inh' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5Inhibitory' 'NoL5Inh/NoL5Inh' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer6Inhibitory' 'NoL6Inh/NoL6Inh' 'True' &
 
-#mkdir NoL1Inh
-#mkdir NoL1Inh_rewired
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Excitatory' 'NoL23Exc_rewired/NoL23Exc_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Excitatory' 'NoL4Exc_rewired/NoL4Exc_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Excitatory' 'NoL5Exc_rewired/NoL5Exc_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Excitatory' 'NoL6Exc_rewired/NoL6Exc_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer1Inhibitory' 'NoL1Inh_rewired/NoL1Inh_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Inhibitory' 'NoL23Inh_rewired/NoL23Inh_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Inhibitory' 'NoL4Inh_rewired/NoL4Inh_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Inhibitory' 'NoL5Inh_rewired/NoL5Inh_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Inhibitory' 'NoL6Inh_rewired/NoL6Inh_rewired' 'True' &
 
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer1Inhibitory' 'NoL1Inh/NoL1Inh' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer23Excitatory' 'NoL23Exc/NoL23Exc' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer4Excitatory' 'NoL4Exc/NoL4Exc' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5Excitatory' 'NoL5Exc/NoL5Exc' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer6Excitatory' 'NoL6Exc/NoL6Exc' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer1Inhibitory' 'NoL1Inh/NoL1Inh' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer23Inhibitory' 'NoL23Inh/NoL23Inh' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer4Inhibitory' 'NoL4Inh/NoL4Inh' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer5Inhibitory' 'NoL5Inh/NoL5Inh' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'Layer6Inhibitory' 'NoL6Inh/NoL6Inh' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_LBC' 'NoL5LBC_rewired/NoL5LBC_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_NBC' 'NoL5NBC_rewired/NoL5NBC_rewired' 'True' &
 
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Excitatory' 'NoL23Exc_rewired/NoL23Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Excitatory' 'NoL4Exc_rewired/NoL4Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Excitatory' 'NoL5Exc_rewired/NoL5Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Excitatory' 'NoL6Exc_rewired/NoL6Exc_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer1Inhibitory' 'NoL1Inh_rewired/NoL1Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer23Inhibitory' 'NoL23Inh_rewired/NoL23Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer4Inhibitory' 'NoL4Inh_rewired/NoL4Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer5Inhibitory' 'NoL5Inh_rewired/NoL5Inh_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'Layer6Inhibitory' 'NoL6Inh_rewired/NoL6Inh_rewired' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_LBC' 'NoL5LBC/NoL5LBC' 'True' &
+srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_BTC' 'NoL5BTC/NoL5BTC' 'True' &
 
-#srun -n 10 python editSpikeFile.py 'rewired/928bf14f-de66-4a86-aca0-e9677923684d' 'L5_MC' 'NoL5MC_rewired/NoL5MC_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_LBC' 'NoL5LBC_rewired/NoL5LBC_rewired' 'True' &
-#srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_NBC' 'NoL5NBC_rewired/NoL5NBC_rewired' 'True' &
-
-srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_DBC' 'NoL5DBC/NoL5DBC' 'True' &
-srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_BP' 'NoL5BP/NoL5BP' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_LBC' 'NoL5LBC/NoL5LBC' 'True' &
-#srun -n 10 python editSpikeFile.py 'original/1a8bf077-4f6c-4bcb-b257-ca1f3d2388cd' 'L5_BTC' 'NoL5BTC/NoL5BTC' 'True' &
-srun -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_BP' 'NoL5BP_rewired/NoL5BP_rewired' 'True' &
-run -n 10 python editSpikeFile.py 'rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0' 'L5_DBC' 'NoL5DBC_rewired/NoL5DBC_rewired' 'True' &
 wait
