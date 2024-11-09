@@ -4,7 +4,7 @@
     "tstop": 2200,
     "random_seed": 814,
     "run_mode":"WholeCell",
-    "electrodes_file": "/gpfs/bbp.cscs.ch/project/proj85/scratch/from68/sonata_circuits/whiskerFlick/rewired/compartment/coeffs_eeg.h5"
+    "electrodes_file": "../../../../../compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/coeffs_eeg.h5"
   },
 
   "conditions": {
@@ -24,7 +24,7 @@
   },
 
   "target_simulator": "CORENEURON",
-  "network": "/gpfs/bbp.cscs.ch/project/proj83/home/pokorny/InterneuronRewiringO1/circuits/SSCx-HexO1-Release__O1_Schneider_Mizell_v2/circuit_config_reparam_tc.json",
+  "network": "../../../../../../rewired_circuit_configuration/circuit_config_reparam_tc.json",
   "node_set": "hex_O1",
   "output": {
     "output_dir": "./reporting",
@@ -62,7 +62,7 @@
         "input_type": "spikes",
         "delay": 0,
         "duration": 2200,
-        "spike_file": "/gpfs/bbp.cscs.ch/project/proj85/scratch/from68/sonata_circuits/whiskerFlick/NoL5Exc_rewired/NoL5Exc_rewired_1.h5",
+        "spike_file": "../../../../../../NoL5Exc_rewired/NoL5Exc_rewired_1.h5",
         "source": "hex_O1",
         "node_set": "hex_O1"
     },

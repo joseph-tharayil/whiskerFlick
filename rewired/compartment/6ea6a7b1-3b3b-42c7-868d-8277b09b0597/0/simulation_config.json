@@ -23,7 +23,7 @@
   },
 
   "target_simulator": "CORENEURON",
-  "network": "/gpfs/bbp.cscs.ch/project/proj83/home/pokorny/InterneuronRewiringO1/circuits/SSCx-HexO1-Release__O1_Schneider_Mizell_v2/circuit_config_reparam_tc.json",
+  "network": "../../../../rewired_circuit_configuration/circuit_config_reparam_tc.json",
   "node_set": "hex_O1",
   "output": {
     "output_dir": "./reporting",

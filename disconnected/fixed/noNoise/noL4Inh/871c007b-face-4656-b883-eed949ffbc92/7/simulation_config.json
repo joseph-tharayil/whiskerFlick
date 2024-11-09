@@ -4,7 +4,7 @@
     "tstop": 2200,
     "random_seed": 306,
     "run_mode":"WholeCell",
-    "electrodes_file": "/gpfs/bbp.cscs.ch/project/proj83/scratch/home/tharayil/BlueRecording/examples/whiskerFlick/electrodeFile/coeffs_eeg.h5" 
+    "electrodes_file": "../../../../../../../BlueRecording/examples/whiskerFlick/electrodeFile/coeffs_eeg.h5" 
   },
 
   "conditions": {
@@ -24,7 +24,7 @@
   },
 
   "target_simulator": "CORENEURON",
-  "network": "/gpfs/bbp.cscs.ch/project/proj83/circuits/Bio_M/20200805-pure-sonata/circuit_config.json",
+  "network": "../../../../../../original_circuit_configuration/circuit_config.json",
   "node_set": "hex_O1",
   "output": {
     "output_dir": "./reporting",
@@ -62,7 +62,7 @@
         "input_type": "spikes",
         "delay": 0,
         "duration": 2200,
-        "spike_file": "/gpfs/bbp.cscs.ch/project/proj85/scratch/from68/sonata_circuits/whiskerFlick/NoL4Inh/NoL4Inh_7.h5",
+        "spike_file": "../../../../../../NoL4Inh/NoL4Inh_7.h5",
         "source": "hex_O1",
         "node_set": "hex_O1"
     },
