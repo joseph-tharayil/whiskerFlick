@@ -47,7 +47,7 @@ We then replay these spike files, along with the thalamic spikes, to a circuit i
 Run these simulations as described above. The EEG contribution for a specific presynaptic population is the difference between the EEG from the fully-connected circuit and the EEG from these simulations. This difference is calculated in the jupyter notebook described below.
 
 #### Effect of compressing spike times from PeriTC cells
-We investigate the effects of compressing the spike times of periTC cells on the EEG signal. We do so by generating a spike input file in which all of the spikes from the fully-connected circuit are present, but the spikes fromperiTC cells all occur simultaneously. To generate this file, run `EditSpikeTiming.sh`
+We investigate the effects of compressing the spike times of periTC cells on the EEG signal. We do so by generating two spike input files, one in which all of the spikes from the fully-connected circuit are present except for those from PeriTC cells, and another in which only the spikes from periTC cells are present and where they all occur simultaneously. To generate the first file, run  `EditSpikeFile_Peri.sh`. To generate the second, run `EditSpikeTiming.sh`
 Then, run the simulation campaign in `rewired/disconnected/compressedTime`.
 
 ### Generating Figures
