@@ -13,13 +13,14 @@ Install Neurodamus and BlueRecording according to the instructions in the [BlueR
 ## Detailed instructions
 
 ### Download models
-Download the model data from our [Zenodo repository](https://zenodo.org/records/11113043) and extract it into the `config` folder.
+Download the model data for the original circuit from this [Zenodo repository](https://zenodo.org/records/11113043) and extract it into the `original_circuit_config` folder. Ensure that you use the .asc morphologies.
+Copy the model data into the `rewired_circuit_config` folder. Then replace the edges.h5 file with the version from this [Zenodo repository](https://zenodo.org/records/11108303).
 
 ### Generating the EEG weights files
 
 #### Original circuit
 
-To generate the EEG weights file for the original circuit, clone the [BlueRecording repository](github.com/BlueBrain/BlueRecording) and follow the instructions [here](https://github.com/BlueBrain/BlueRecording/tree/main/examples/whiskerFlick#readme), up to step 4. 
+To generate the EEG weights file for the original circuit, clone the [BlueRecording repository](github.com/BlueBrain/BlueRecording) into the parent folder of this repository (to ensure that relative paths work as expected), and follow the instructions [here](https://github.com/BlueBrain/BlueRecording/tree/main/examples/whiskerFlick#readme), up to step 4. 
 
 #### Schneider-Mizell circuit
 
