@@ -24,7 +24,7 @@ To generate the EEG weights file for the original circuit, clone the [BlueRecord
 
 #### Schneider-Mizell circuit
 
-To generate the EEG weights file for the SM circuit, follow the instructions [here](https://github.com/joseph-tharayil/whiskerFlick/rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/). Alternatively, unzip the file `rewiredCoeffFile.tar.gz` from [this Zenodo repository](https://zenodo.org/records/14442089) into the folder `rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/`.
+To generate the EEG weights file for the SM circuit, follow the instructions [here](https://github.com/joseph-tharayil/whiskerFlick/tree/publication/rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0#readme). Alternatively, unzip the file `rewiredCoeffFile.tar.gz` from [this Zenodo repository](https://zenodo.org/records/14442089) into the folder `rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/`.
 
 ### Running simulations
 
