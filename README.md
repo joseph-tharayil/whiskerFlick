@@ -20,11 +20,11 @@ Copy the model data into the `rewired_circuit_config` folder. Then replace the e
 
 #### Original circuit
 
-To generate the EEG weights file for the original circuit, clone the [BlueRecording repository](github.com/BlueBrain/BlueRecording) into the parent folder of this repository (to ensure that relative paths work as expected), and follow the instructions [here](https://github.com/BlueBrain/BlueRecording/tree/main/examples/whiskerFlick#readme), up to step 4. 
+To generate the EEG weights file for the original circuit, clone the [BlueRecording repository](github.com/BlueBrain/BlueRecording) into the parent folder of this repository (to ensure that relative paths work as expected), and follow the instructions [here](https://github.com/BlueBrain/BlueRecording/tree/main/examples/whiskerFlick#readme), up to step 4. Alternatively, unzip the file `originalCoeffFile.tar.gz` from [this Zenodo repository](https://zenodo.org/records/14442089) into the folder `BlueRecording/examples/whiskerFlick/electrodeFile` after cloning the repo as described above.
 
 #### Schneider-Mizell circuit
 
-To generate the EEG weights file for the SM circuit, follow the instructions [here](https://github.com/joseph-tharayil/whiskerFlick/rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/)
+To generate the EEG weights file for the SM circuit, follow the instructions [here](https://github.com/joseph-tharayil/whiskerFlick/rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/). Alternatively, unzip the file `rewiredCoeffFile.tar.gz` from [this Zenodo repository](https://zenodo.org/records/14442089) into the folder `rewired/compartment/6ea6a7b1-3b3b-42c7-868d-8277b09b0597/0/`.
 
 ### Running simulations
 
@@ -49,6 +49,9 @@ Run these simulations as described above. The EEG contribution for a specific pr
 #### Effect of compressing spike times from PeriTC cells
 We investigate the effects of compressing the spike times of periTC cells on the EEG signal. We do so by generating two spike input files, one in which all of the spikes from the fully-connected circuit are present except for those from PeriTC cells, and another in which only the spikes from periTC cells are present and where they all occur simultaneously. To generate the first file, run  `EditSpikeFile_Peri.sh`. To generate the second, run `EditSpikeTiming.sh`
 Then, run the simulation campaign in `rewired/disconnected/compressedTime`.
+
+#### Important note
+Rather than running the simulations, you can simply save the postprocessed data from [this Zenodo repository](https://zenodo.org/records/14442089) into the corresponding folders in this repo.
 
 ### Generating Figures
 
