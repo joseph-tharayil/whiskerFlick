@@ -1,6 +1,6 @@
 # Computational modeling reveals biological mechanisms underlying the whisker-flick EEG
 
-This repository contains the code used in the paper "Computational modeling reveals biological mechanisms underlying the whisker-flick EEG". 
+This repository contains the code used in the paper [Computational modeling reveals biological mechanisms underlying the whisker-flick EEG](https://www.biorxiv.org/content/10.1101/2024.12.13.628364v1.full). 
 We simulate EEG signals from two versions ("original" and "Schneider-Mizell", respectively) of the Blue Brain Project's models of the rat non-barrel primary somatosensory cortex (nbS1), under a variety of conditions.
 It relies on the BlueRecording workflow described in [this paper](https://www.biorxiv.org/content/10.1101/2024.05.14.591849v1) and [this repo]((github.com/BlueBrain/BlueRecording)).
 Briefly, for each of the neural circuits, we generate a "weights file" that describes how the transmembrane current in each neural compartment contributes to the EEG. We then simulate the EEG under a variety of conditions.
@@ -56,6 +56,10 @@ Rather than running the simulations, you can simply save the postprocessed data 
 ### Generating Figures
 
 To reproduce the figures in the paper, simply run the juptyer notebooks in the root directory of this repo.
+
+# Citation
+
+If you use this software, we kindly ask you to cite the following publication: [Tharayil et al. Computational modeling reveals biological mechanisms underlying the whisker-flick EEG. *bioRxiv* (2024)](https://www.biorxiv.org/content/10.1101/2024.12.13.628364v1.full)
 
 # Acknowledgment
 The development of this software was supported by funding to the Blue Brain Project, a research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss government's ETH Board of the Swiss Federal Institutes of Technology.
