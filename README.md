@@ -34,6 +34,8 @@ The simulation campaigns in the folder `original` refer to the unmodified nbS1 c
 
 First, we run the simulations in the campaigns `rewired/97d6aa07-db02-48c6-91c2-b3023ce5bdd0` and `original/fixed/a9f782a3-1f22-4384-a122-430bc6b2323c`. These are the simulations with full cortico-cortical connectivity, and with thalamic input replayed into the circuit.
 
+In order to run the simulations, you will need to obtain the HDF5 files defining the whisker-flick input from the VPM. These files are available in [this Zenodo repository](https://zenodo.org/records/14442089), which has the same directory structure as this repo. All input files are named `vpm_input.h5`, and are each located in the same folder as the simulation which uses them.
+
 To run the simulations, navigate to each simulation folder and launch the `launch.sh` script.
 Once the simulations are complete, postprocess data by launching the `Geteeg.sh` script in the campaign folder. 
 
