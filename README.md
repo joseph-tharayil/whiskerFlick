@@ -63,7 +63,7 @@ To reproduce the figures in the paper, simply run the juptyer notebooks in the r
 
 # Citation
 
-If you use this software, we kindly ask you to cite the following publication: [Tharayil et al. Computational modeling reveals biological mechanisms underlying the whisker-flick EEG. *bioRxiv* (2024)](https://www.biorxiv.org/content/10.1101/2024.12.13.628364v1.full)
+If you use this software, we kindly ask you to cite the following publication: [Tharayil et al. Computational modeling reveals biological mechanisms underlying the whisker-flick EEG. *iScience* (2025)](https://doi.org/10.1016/j.isci.2025.113793).
 
 # Acknowledgment
 The development of this software was supported by funding to the Blue Brain Project, a research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss government's ETH Board of the Swiss Federal Institutes of Technology.
