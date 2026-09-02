@@ -4,7 +4,7 @@
 
 This repository contains the code used in the paper [Computational modeling reveals biological mechanisms underlying the whisker-flick EEG](https://www.biorxiv.org/content/10.1101/2024.12.13.628364v1.full). 
 We simulate EEG signals from two versions ("original" and "Schneider-Mizell", respectively) of the Blue Brain Project's models of the rat non-barrel primary somatosensory cortex (nbS1), under a variety of conditions.
-It relies on the BlueRecording workflow described in [this paper](https://www.biorxiv.org/content/10.1101/2024.05.14.591849v1) and [this repo]((github.com/BlueBrain/BlueRecording)).
+It relies on the BlueRecording workflow described in [this paper](https://doi.org/10.1371/journal.pcbi.1013023) and [this repo]((github.com/BlueBrain/BlueRecording)).
 Briefly, for each of the neural circuits, we generate a "weights file" that describes how the transmembrane current in each neural compartment contributes to the EEG. We then simulate the EEG under a variety of conditions.
 
 ## Prerequisites
